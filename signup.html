@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url(https://i.pinimg.com/736x/d4/31/0b/d4310b25510ee2307f272e32c52d9c2b.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main {
+            width: 500px;
+            height: 600px;
+            background-color: transparent;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px black;
+
+        }
+
+        .main p {
+            font-weight: bolder;
+            font-size: 2em;
+            padding-top: 40px;
+            margin-left: 180px;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+        }
+
+        .name {
+            width: 350px;
+            height: 45px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1.2em;
+            margin-left: 50px;
+            padding-left: 20px;
+        }
+
+        .email {
+            width: 350px;
+            height: 45px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1.2em;
+            margin-left: 50px;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .pass {
+            width: 350px;
+            height: 45px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1.2em;
+            margin-left: 50px;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .icon1,
+        .icon2 {
+            position: relative;
+            left: -50px;
+            top: 5px;
+        }
+
+        .btn button {
+            width: 380px;
+            height: 45px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1.2em;
+            margin-left: 50px;
+            margin-top: 20px;
+            padding-left: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: rgb(7, 12, 10);
+            color: white;
+            transition: all 0.5s;
+        }
+
+        .btn button:hover {
+            background-color: rgb(206, 156, 91);
+            transform: scale(1.1);
+        }
+
+        .btn button:active {
+            background-color: rgb(137, 89, 25);
+        }
+
+        .twitter,
+        .facebook,
+        .google {
+            width: 30px;
+            height: 30px;
+            transition: all 0.3s;
+        }
+
+        .twitter:hover,
+        .facebook:hover,
+        .google:hover{
+            transform: scale(1.2);
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .foot {
+            font-size: 1.3em;
+            margin-left: 120px;
+            margin-top: 30px;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+        }
+
+        .foot a {
+            display: inline-block;
+            color: black;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .foot a:hover{
+            transform: scale(1.2);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <p>Sign Up</p>
+        <input type="text" placeholder="Name" class="name" required>
+        <box-icon type='solid' name='user' class="icon1"></box-icon>
+
+        <input type="text" placeholder="Email" class="email" required>
+        <box-icon type='solid' name='envelope' class="icon1"></box-icon>
+
+        <input type="password" placeholder="Password" class="pass" required>
+        <box-icon type='solid' name='lock' class="icon2"></box-icon>
+
+        <input type="password" placeholder="Confirm Password" class="pass" required>
+        <box-icon type='solid' name='lock' class="icon2"></box-icon>
+
+        <div class="btn">
+            <button>Sign Up</button>
+        </div>
+
+        <div class="social">
+            <a href="#"><img src="Assets/Twitter.png" alt="" class="twitter"></a>
+            <a href="#"><img src="Assets/Facebook.png" alt="" class="facebook"></a>
+            <a href="#"><img src="Assets/Google.png" alt="" class="google"></a>
+        </div>
+
+        <div class="foot">Have an account? <a href="login.html">Login</a></div>
+
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>

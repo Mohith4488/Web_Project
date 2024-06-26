@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-color: aquamarine; */
+            background-image: url(https://redpithemes.com/Documentation/assets/img/page_bg/page_bg_blur02.jpg);
+            background-repeat: none;
+            overflow: hidden;
+        }
+
+        .main {
+            height:500px;
+            width: 500px;
+            /* background-color: bisque; */
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin-top: 80px;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 0px 4px 8px black; 
+        }
+
+        .main p {
+            font-size: 2em;
+            padding-top: 30px;
+            margin-left: 200px;
+            font-weight: bold;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+        }
+
+        .user {
+            height: 45px;
+            width: 350px;
+            margin-left: 50px;
+            border-radius: 20px;
+            font-size: 1.2em;
+            padding-left: 20px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .icon1 {
+            position: relative;
+            left: -50px;
+            top: 5px;
+        }
+
+        .pass {
+            height: 45px;
+            width: 350px;
+            margin-left: 50px;
+            border-radius: 20px;
+            font-size: 1.2em;
+            padding-left: 20px;
+            border: none;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+        }
+
+        .icon2 {
+            position: relative;
+            left: -50px;
+            top: 5px;
+        }
+
+        .remember {
+            font-size: 1.2em;
+            /* font-family: "Roboto Mono", monospace;
+            font-style: normal; */
+        }
+
+        #remember {
+            margin-left: 53px;
+            margin-top: 20px;
+        }
+
+        #remember[type="checkbox"] {
+            height: 17px;
+            width: 17px;
+        }
+
+        .forgot {
+            display: inline-block;
+            margin-left: 55px;
+            color: black;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+            transition: all 0.3s;
+        }
+
+        .forgot:hover {
+            transform: scale(1.2);
+        }
+
+        .btn button {
+            cursor: pointer;
+            margin-top: 30px;
+            height: 45px;
+            width: 380px;
+            margin-left: 50px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+            background-color: rgb(18, 13, 6);
+            color: white;
+            transition: all 0.5s;
+        }
+
+        .btn button:hover {
+            background-color: rgb(206, 156, 91);
+            transform: scale(1.1);
+        }
+
+        .btn button:active {
+            background-color: rgb(137, 89, 25);
+        }
+
+        .sign {
+            margin-top: 30px;
+            font-size: 1.2em;
+            margin-left: 75px;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+        }
+
+        .reg {
+            display: inline-block;
+            color: black;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .reg:hover {
+            transform: scale(1.1);
+        }
+
+        .twitter,
+        .facebook,
+        .google {
+            height: 30px;
+            width: 30px;
+            transition: all 0.3s;
+        }
+
+        .twitter:hover,
+        .facebook:hover,
+        .google:hover {
+            transform: scale(1.2);
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <p>Login</p>
+
+        <input type="text" placeholder="Username" class="user" required>
+        <box-icon type='solid' name='user' class="icon1"></box-icon>
+
+        <input type="password" placeholder="Password" class="pass" required>
+        <box-icon type='solid' name='lock' class="icon2"></box-icon>
+
+        <div class="remember">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+
+        <div class="btn">
+            <button>Login</button>
+        </div>
+
+        <div class="sign">Don't have an account? <a href="signup.html" class="reg">Register</a></div>
+        <div class="social">
+            <a href="#"><img src="Assets/Twitter.png" alt="" class="twitter"></a>
+            <a href="#"><img src="Assets/Facebook.png" alt="" class="facebook"></a>
+            <a href="#"><img src="Assets/Google.png" alt="" class="google"></a>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
